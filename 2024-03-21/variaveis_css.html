@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poetsen+One&display=swap');
+            :root{
+                --cor-fundo: green;
+                --cor-primaria: black;
+                --cor-secundaria: gray;
+                --fonte-principal: 114px"Danfo";
+                --fonte-secundaria: 20px"Poetsen One";
+                --altura-cabecalho: 100px;
+            }
+        
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+        
+            }
+        
+            body{
+                background-color: var(--cor-fundo);
+            }
+        
+            .container{
+                background-color: var(--cor-secundaria);
+                border: 1px solid var(--cor-primaria);
+                padding: 10px;
+                height: calc(100vh - var(--altura-cabecalho));
+            }
+
+            .cabecalho{
+                background-color: var(--cor-fundo);
+                height: 100px;
+                overflow-y: scroll;
+            }
+        
+            .container h1{
+                color: var(--cor-primaria);
+                margin-bottom: 10px;
+                font: var(--fonte-principal);
+            }
+        
+            .container ul{
+                margin-left: 10px;
+                color: var(--cor-primaria);
+                font: var(--fonte-secundaria);
+            }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+        <p>Cabeçalho</p>
+    </div>
+    <div class="container">
+        <h1>Lista de Tarefas:</h1>
+        <ul>
+            <li>Tarefa 1</li>
+            <li>Tarefa 2</li>
+            <li>Tarefa 3</li>
+        </ul>
+    </div>
+</body>
+</html>
