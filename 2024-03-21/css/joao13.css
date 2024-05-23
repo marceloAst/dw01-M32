@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+.versiculo{
+    text-indent: 1em;
+}
+
+h1{
+    text-align: center;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.Jesus{
+    color: #f70a0a;
+}
