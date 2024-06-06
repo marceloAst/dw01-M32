@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+        .container{
+            background-color:gray;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse;
+        }
+
+        .box1{
+            width: 6.25rem;
+            height: 100px;
+            border: 1px solid black;
+            color: white;
+            /* position: fixed;
+            bottom: 10px;
+            right: -10px; */
+        }
+
+        .flex-center{
+            display: flex;
+            justify-self: center;
+            align-items: center;
+
+        }
+
+        .bg-verde{
+            background-color: green;
+        }
+
+        .bg-azul{
+            background-color: blue;
+        }
+
+        .bg-vermelho{
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- <h1>Flexbox</h1> -->
+
+    <div class="container">
+        <div class="box1 bg-verde flex-center">1</div>
+        <div class="box1 bg-azul flex-center">2</div>
+        <div class="box1 bg-vermelho flex-center">3</div>
+        <div class="box1 bg-verde flex-center">1</div>
+        <div class="box1 bg-azul flex-center">2</div>
+        <div class="box1 bg-vermelho flex-center">3</div>
+        <div class="box1 bg-verde flex-center">1</div>
+        <div class="box1 bg-azul flex-center">2</div>
+        <div class="box1 bg-verde flex-center">1</div>
+        <div class="box1 bg-azul flex-center">2</div>
+        <div class="box1 bg-vermelho flex-center">3</div>
+    </div>
+
+</body>
+</html>
