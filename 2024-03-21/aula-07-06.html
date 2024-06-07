@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: 0;
+        }
+        img{
+            width: 50vw;
+        }
+        .pricipal{
+           background-image: url("https://cdn-3.motorsport.com/images/amp/YN19ORj2/s6/esapekka-lappi-janne-ferm-hyun.jpg");
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           height: 100vh;
+        }
+
+        div.conteiner{
+            background-color: royalblue;
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+            height: 100vh;
+        }
+
+        div#Rally{
+            background-color: royalblue;
+            width: 100%;
+            height: 32%;
+        }
+
+        div#Campeonato{
+            background-color: rgb(90, 123, 224);
+            width: 100%;
+            height: 32%;
+        }
+
+        div#Carro_de_Rally{
+            background-color: rgb(90, 126, 235);
+            width: 100%;
+            height: 32%;
+        }
+
+        div.menu li {
+            width: 120px;
+            border: 2px solid #638adf;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: rgb(110, 142, 236);
+            font-family: Bebas Neue;
+            display: inline-block;
+        }
+
+        a{
+            color: azure;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        div.menu li:hover{
+            background-color: royalblue;
+            color: #000000;
+            
+        }
+
+        div.menu {
+            background-color: royalblue;
+            
+        }
+
+        h1{
+            background-color: #638adf;
+            font-size: 60px;
+            color: white;
+            font-family: Bebas Neue;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="menu">
+            <ul>
+                <li><a href="#Rally">Rally</a></li>
+                <li><a href="#Campeonato">Campeonato</a></li>
+                <li><a href="Carro_de_Rally">Carro de Rally</a></li>
+            </ul>
+        </div>
+        <h1>Rally</h1>
+        <div class="pricipal"></div>
+        
+        <div id="Rally">Rally</div>
+        <div id="Campeonato">Campeonato</div>
+        <div id="Carro_de_Rally">Carro de Rally</div>
+    </div>
+</body>
+</html>
