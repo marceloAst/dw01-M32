@@ -1,0 +1,179 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: 'Bebas Neue', sans-serif;
+     scroll-behavior: smooth;
+     background-color: royalblue;
+ }
+
+ .principal {
+     background-image: url("https://cdn-3.motorsport.com/images/amp/YN19ORj2/s6/esapekka-lappi-janne-ferm-hyun.jpg");
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     animation-duration: 3s;
+     animation-name: slidein;
+ }
+
+ .container {
+     background-color: royalblue;
+     text-align: center;
+ }
+
+ .carros{
+    display: flex;
+    flex-shrink: 1;
+ }
+
+ .carros .box1{
+    display: flex;
+    align-items: center;
+ }
+
+ .box1{
+    background-color: rgb(231, 223, 223);
+    height: 500px;
+    width: 700px;
+    font-size: 80px;
+    color: rgb(90, 123, 224);
+    text-align: center;
+
+}
+
+.box2{
+    background-image: url('https://retornar.com.br/wp-content/uploads/2023/07/shutterstock_1020338218-1-Carro-de-Rally-1140x694.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 500px;
+}
+
+ section {
+     padding: 60px 20px;
+ }
+
+ #Rally {
+     background-color: rgb(90, 126, 235);
+     color: white;
+     margin-top: 200px;
+ }
+
+ #Campeonato {
+     background-color: rgb(90, 123, 224);
+     color: white;
+     margin-top: 200px;
+ }
+
+ #Carro_de_Rally {
+     background-color: rgb(90, 126, 235);
+     color: white;
+     margin-top: 200px;
+ }
+
+ #Rally4{
+    background-color: rgb(90, 126, 235);
+     color: white;
+     margin-top: 200px;
+ }
+
+ .Peugeot{
+    background-image: url('https://cdn.motor1.com/images/mgl/wl2glG/s4/foto_peugeot_208rally4_6.webp');
+    background-size: cover;
+     background-position: center;
+     height: 80vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: white;
+     text-shadow: 2px 2px 4px #000000;
+     border-radius: 20px;
+ }
+
+ .menu {
+     background-color: royalblue;
+     padding: 20px;
+     position: sticky;
+     top: 0;
+     flex-shrink: 1;
+ }
+
+ .menu ul {
+     list-style-type: none;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+ }
+
+ .menu li {
+     margin: 0 15px;
+ }
+
+ .menu a {
+     display: block;
+     padding: 20px 30px;
+     border: 2px solid #638adf;
+     border-radius: 10px;
+     background-color: rgb(110, 142, 236);
+     color: azure;
+     text-decoration: none;
+     transition: 0.3s;
+     font-size: 18px;
+ }
+
+ .menu a:hover {
+     background-color: royalblue;
+     color: #000000;
+ }
+
+ h1 {
+     font-size: 75px;
+     color: white;
+     padding: 20px;
+     margin: 20px;
+ }
+
+ p{
+    font-size: 18px;
+ }
+
+ .carrosTextos{
+    background-color: rgb(90, 126, 235);
+     color: white;
+ }
+
+ .grupos {
+     border: white 2px solid;
+     margin-top: 20px;
+     border-radius: 20px;
+     font-size: 18px;
+ }
+
+ footer {
+     margin: 50px;
+     color: white;
+     font-size: 20px;
+ }
+
+ @keyframes slidein {
+     from {
+         margin-left: 100%;
+         width: 300%;
+     }
+
+     to {
+         margin-left: 0%;
+         width: 100%;
+     }
+ }
