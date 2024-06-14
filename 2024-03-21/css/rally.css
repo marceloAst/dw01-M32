@@ -1,5 +1,14 @@
  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+ :root {
+     --cor-fundo: royalblue;
+     --cor-fubdo2: rgb(231, 223, 223);
+     --cor-fundo3: rgb(90, 123, 224);
+     --sombra: 2px 2px 4px #000000;
+     --cor-fundo4: white;
+     --cor-fundo5: #000000;
+ }
+
  * {
      padding: 0;
      margin: 0;
@@ -9,7 +18,8 @@
  body {
      font-family: 'Bebas Neue', sans-serif;
      scroll-behavior: smooth;
-     background-color: royalblue;
+     background-color: var(--cor-fundo);
+     overflow: hidden;
  }
 
  .principal {
@@ -22,87 +32,89 @@
      justify-content: center;
      align-items: center;
      color: white;
-     text-shadow: 2px 2px 4px #000000;
+     text-shadow: var(--cor-fundo4);
+    -webkit-text-stroke-width: 3px; /* largura da borda */
+    -webkit-text-stroke-color: var(--cor-fundo); /* cor da borda */
      animation-duration: 3s;
      animation-name: slidein;
  }
 
  .container {
-     background-color: royalblue;
+     background-color: var(--cor-fundo);
      text-align: center;
  }
 
- .carros{
-    display: flex;
-    flex-shrink: 1;
+ .carros {
+     display: flex;
+     flex-shrink: 1;
  }
 
- .carros .box1{
-    display: flex;
-    align-items: center;
+ .carros .box1 {
+     display: flex;
+     align-items: center;
  }
 
- .box1{
-    background-color: rgb(231, 223, 223);
-    height: 500px;
-    width: 700px;
-    font-size: 80px;
-    color: rgb(90, 123, 224);
-    text-align: center;
+ .box1 {
+     background-color: var(--cor-fubdo2);
+     height: 500px;
+     width: 700px;
+     font-size: 80px;
+     color: var(--cor-fundo3);
+     text-align: center;
 
-}
+ }
 
-.box2{
-    background-image: url('https://retornar.com.br/wp-content/uploads/2023/07/shutterstock_1020338218-1-Carro-de-Rally-1140x694.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    width: 500px;
-}
+ .box2 {
+     background-image: url('https://retornar.com.br/wp-content/uploads/2023/07/shutterstock_1020338218-1-Carro-de-Rally-1140x694.jpg');
+     background-size: cover;
+     background-position: center;
+     height: 500px;
+     width: 500px;
+ }
 
  section {
      padding: 60px 20px;
  }
 
  #Rally {
-     background-color: rgb(90, 126, 235);
-     color: white;
-     margin-top: 200px;
+     background-color: var(--cor-fundo3);
+     color: var(--cor-fundo4);
+     margin-top: 100px;
  }
 
  #Campeonato {
-     background-color: rgb(90, 123, 224);
-     color: white;
-     margin-top: 200px;
+     background-color: var(--cor-fundo3);
+     color: var(--cor-fundo4);
+     margin-top: 100px;
  }
 
  #Carro_de_Rally {
-     background-color: rgb(90, 126, 235);
-     color: white;
-     margin-top: 200px;
+     background-color: var(--cor-fundo3);
+     color: var(--cor-fundo4);
+     margin-top: 100px;
  }
 
- #Rally4{
-    background-color: rgb(90, 126, 235);
-     color: white;
-     margin-top: 200px;
+ #Rally4 {
+     background-color: var(--cor-fundo3);
+     color: var(--cor-fundo4);
+     margin-top: 100px;
  }
 
- .Peugeot{
-    background-image: url('https://cdn.motor1.com/images/mgl/wl2glG/s4/foto_peugeot_208rally4_6.webp');
-    background-size: cover;
+ .Peugeot {
+     background-image: url('https://cdn.motor1.com/images/mgl/wl2glG/s4/foto_peugeot_208rally4_6.webp');
+     background-size: cover;
      background-position: center;
      height: 80vh;
      display: flex;
      justify-content: center;
      align-items: center;
-     color: white;
-     text-shadow: 2px 2px 4px #000000;
+     color: var(--cor-fundo4);
+     text-shadow: var(--sombra);
      border-radius: 20px;
  }
 
  .menu {
-     background-color: royalblue;
+     background-color: roya;
      padding: 20px;
      position: sticky;
      top: 0;
@@ -134,27 +146,27 @@
 
  .menu a:hover {
      background-color: royalblue;
-     color: #000000;
+     color: var(--cor-fundo5);
  }
 
  h1 {
      font-size: 75px;
-     color: white;
+     color: var(--cor-fundo4);
      padding: 20px;
      margin: 20px;
  }
 
- p{
-    font-size: 18px;
+ p {
+     font-size: 18px;
  }
 
- .carrosTextos{
-    background-color: rgb(90, 126, 235);
-     color: white;
+ .carrosTextos {
+     background-color: rgb(90, 126, 235);
+     color: var(--cor-fundo4);
  }
 
  .grupos {
-     border: white 2px solid;
+     border: var(--cor-fundo4) 2px dashed;
      margin-top: 20px;
      border-radius: 20px;
      font-size: 18px;
@@ -162,7 +174,7 @@
 
  footer {
      margin: 50px;
-     color: white;
+     color: var(--cor-fundo4);
      font-size: 20px;
  }
 
@@ -177,3 +189,23 @@
          width: 100%;
      }
  }
+
+ main {
+     height: calc(100vh - 126px);
+     position: fixed;
+     top: 126px;
+     width: 100vw;
+     overflow-y: scroll;
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+
+ }
+
+ button {
+    background-color: var(--cor-fundo);
+    color: var(--cor-fubdo2);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
