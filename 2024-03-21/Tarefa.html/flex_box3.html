@@ -11,7 +11,70 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            overflow: hidden;
         }
+
+        body{
+            background-color: royalblue;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+            font-size: 40px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .card{
+            border: 2px solid royalblue;
+            border-radius: 10px;
+            background-color: white;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            width: 300px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .plano-nome{
+            color: black;
+            margin: 50px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .plano-valor{
+            color: royalblue;
+            margin: 50px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        li{
+            list-style: none;
+            text-align: center;
+            color: gray;
+            font-size: xx-small;
+        }
+
+        .plano-comprar{
+            border: 2px solid royalblue;
+            color: white;
+            background-color: royalblue;
+            text-align: center;
+            margin: 30px;
+            font-size: 15px;
+            border-radius: 10px;
+            height: 30px;
+            padding-top: 4px;
+        }
+
+        
 
 
 
@@ -26,8 +89,8 @@
 
 
         <div class="card">            
-            <div class="plano-nome">Starter</div>
-            <div class="plano-valor">R$ 50,00</div>
+            <div class="plano-nome"><strong>Starter</strong></div>
+            <div class="plano-valor"><strong>R$ 50,00</strong></div>
             <div class="plano-descricao">
                 <ul>
                     <li>1 usuário</li>
@@ -41,8 +104,8 @@
         </div>
         <div class="card">
             
-            <div class="plano-nome">Personal</div>
-            <div class="plano-valor">R$ 100,00</div>
+            <div class="plano-nome"><strong>Personal</strong></div>
+            <div class="plano-valor"><strong>R$ 100,00</strong></div>
             <div class="plano-descricao">
                 <ul>
                     <li>10 usuários</li>
@@ -55,8 +118,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="plano-nome">Team</div>
-            <div class="plano-valor">R$ 300,00</div>
+            <div class="plano-nome"><strong>Team</strong></div>
+            <div class="plano-valor"><strong>R$ 300,00</strong></div>
             <div class="plano-descricao">
                 <ul>
                     <li>50 usuários</li>
