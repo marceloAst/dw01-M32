@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahianita&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topo {
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    background-color: #160C28;
+    font-size: 50px;
+    font-family: Bahianita;
+}
+
+.sidebar {
+    color: rgb(0, 0, 0);
+    background-color: #EFCB68;
+    width: 10vw;
+    height: 80vh;
+    font-size: 30px;
+    font-family: Bahianita;
+    text-align: center;
+}
+
+.conteudo {
+    color: rgb(0, 0, 0);
+    background-color: #E1EFE6;
+    font-size: 30px;
+    font-family: Bahianita;
+    width: 90vw;
+    height: 80vh;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.rodape {
+    height: 10vh;
+    width: 100vw;
+    font-size: 20px;
+    font-family: Bahianita;
+    background-color: #AEB7B3;
+}
