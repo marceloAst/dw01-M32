@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form{
+            display: inline;
+        }
+
+        input{
+            border: 2px solid rgb(48, 31, 204);
+            border-radius: 10px;
+            background-color: rgb(128, 186, 219);
+            padding: 8px;
+            outline: none;
+        }
+
+        input::placeholder{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="get"></form>
+    <label for="senha">Nome</label>
+    <input type="text" id="nomeUsuario" placeholder="Digite seu nome">
+
+    <form action="#" method="get"></form>
+    <label for="senha">Digita sua senha</label>
+    <input type="text" id="senha" placeholder="Digite seu nome">
+</body>
+</html>
