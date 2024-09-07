@@ -4,24 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema De Multas</title>
+    <link rel="stylesheet" href="./SistemaDeMultas.css">
 </head>
 <body>
-    <h1>Sistema De Multas</h1>
-    <div>
-        <div class="box1">
-            <p>Velocidade Maxima Da Via</p>
-            <label for="VelocidadeMaximaDaVia"></label>
-            <input id = "VelocidadeMaximaDaVia" type="number">
+    <h1>Sistema de Multas</h1>
+    <div class="container">
+        <div class="box">
+            <div class="input-group">
+                <p>Velocidade Máxima da Via</p>
+                <input id="VelocidadeMaximaDaVia" type="number" placeholder="Ex: 100">
+            </div>
+            <div class="input-group">
+                <p>Velocidade do Veículo</p>
+                <input id="VelocidadeDoVericulo" type="number" placeholder="Ex: 120">
+            </div>
+            <button onclick="SistemaDeMultas()">Calcular</button>
         </div>
-    
-        <div class="box2">
-            <p>Velocidade Do Vericulo</p>
-            <label for="VelocidadeDoVericulo"></label>
-            <input id = "VelocidadeDoVericulo" type="number">
+        <div class="resultado">
+            <h2>Multa por excesso de velocidade:</h2>
+            <ul>
+                <li>R$ 130,16 - Até 20% acima do limite permitido</li>
+                <li>R$ 195,23 - De 20% até 50% acima do limite permitido</li>
+                <li>R$ 880,41 - Acima de 50% do limite permitido</li>
+            </ul>
         </div>
     </div>
-    <button onclick="SistemaDeMultas()">Calcule</button>
-            <div id="saida">MULTA:</div>
-    <script src="./SistemaDeMultas.js" ></script>
+    <div id="saida">MULTA:</div>
+    <script src="./SistemaDeMultas.js"></script>
 </body>
 </html>
