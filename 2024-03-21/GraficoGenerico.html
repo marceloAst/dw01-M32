@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico com Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        #grafico-container {
+            width: 60%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="grafico-container">
+        <canvas id="meuGrafico"></canvas>
+    </div>
+
+    <script>
+        // Função para criar o gráfico
+        function criarGrafico(tipo = 'bar') {
+            const ctx = document.getElementById('meuGrafico').getContext('2d');
+            const meuGrafico = new Chart(ctx, {
+                type: tipo, // 'bar', 'line', 'pie'
+                data: {
+                    labels: ['00', '00', '00', '00', '00', '00'],
+                    datasets: [{
+                        label: 'Parâmetros',
+                        //label: 'Parâmetros(%)',
+                        data: [12, 19, 3, 5, 2, 3],
+                        backgroundColor: [
+                            'royalblue',
+                            'royalblue',
+                            'royalblue',
+                            'royalblue',
+                            'royalblue',
+                            'royalblue'
+                        ],
+                        borderColor: [
+                            'black',
+                            'black',
+                            'black',
+                            'black',
+                            'black',
+                            'black'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Inicializar gráfico
+        criarGrafico();
+
+    </script>
+
+</body>
+</html>
