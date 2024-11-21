@@ -1,5 +1,5 @@
-function mostrarTabuada (n){
-    let num  = 1
+function mostrarTabuada (n){   
+let num  = 1
     let a = 10
     while(num < 10){
         console.log(n * a)
